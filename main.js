@@ -18,16 +18,11 @@ var addressBookPerson;
 $(document).ready(function(){
 
 
-// create a structured object
-
 
 
 
 
 // create a new object function that inherits structured object
-
-// one user clicks addButton new properties/values get added to the new object
-
 
 // append list item with user named wrapped around a link/button and when clicked shows detailed information.
 	//new list item will be created and added to ul class="contact-list".
@@ -52,22 +47,7 @@ var addressBookPerson = function(firstName, lastName, phoneNumber, street, city,
 var Bryan = new addressBookPerson("Bryan", "Franzoi", "312-965-3100","42 West 3rd", "LV", "NV");
 addressBook[0] = new addressBookPerson;
 console.log(addressBook)
-//firstName.name = $('firstName').value;
-// firstName.name = document.getElementById('firstName').val();
-// firstName.name = document.getElementById('firstName').val();
-// firstName.name = document.getElementById('firstName').val();
-// firstName.name = document.getElementById('firstName').val();
-// firstName.name = document.getElementById('firstName').val();
-
-
-
-//addressBookPerson.forEach(function(addressBookPerson) {
-  //console.log(addressBookPerson.name + " named:");
-  // adressBookPerson.lastName.forEach(function(lastName) {
-  //   console.log(lastName.name);
-  // });
-//});
-
+/
 
 
 //create add button functionality	
@@ -77,16 +57,10 @@ $( "#add-button" ).click(function(event) {
 	//addressBookName.push($('#firstName').val());
 	addressBook.push( new addressBookPerson($('#firstName').val(), $('#lastName').val(), $('#phoneNumber').val(),
 											 $('#street').val(), $('#city').val(), $('#state').val()));
-	//,addressBook.push( 'Ford')
+
 	console.log(addressBook);
+	//$('#contacts-form').html('');
 
 });
-
-
-
-
-
-
-
 
 });
