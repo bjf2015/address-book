@@ -1,0 +1,11 @@
+body {
+	margin: 0 auto;
+	width: 500px;
+
+
+}
+
+.detail-field {
+	display: inline-block;
+	float: right;
+}
